@@ -1,0 +1,219 @@
+body {
+    background-image: url('../images/bg.jpg');
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color:#FFF;
+    min-height: 100vh;
+}
+
+.main {
+    width: 100%;
+    max-width: 1015px;
+    margin: auto;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    margin: 40px 0;
+}
+
+header .menu-icon {
+    display: none;
+    position: absolute;
+}
+
+header .ham{
+    width: 40px;
+    height: 6px;
+    background-color: #FFF;
+    border-radius:3px;
+    margin-bottom: 4px;
+}
+
+header .logo {
+    width: 200px;
+}
+
+header .logo img{
+    width:100%;
+}
+
+nav {
+    flex:1;
+}
+
+nav ul{
+    list-style: none;
+    margin:0;
+    display: flex;
+    justify-content: flex-end ;
+}
+
+nav li {
+    margin: 0 10px;
+
+}
+nav a {
+    color: #FFF;
+    text-decoration: none;
+}
+
+.container {
+    display: flex;
+}
+
+.content-area {
+    flex:1;
+}
+
+.content-area h1 {
+    font-size: 40px;
+    margin-top:80px;
+}
+
+.content-area .cta {
+    display: flex;
+    margin-top: 40px;
+}
+
+.cta .button {
+    width: 200px;
+    height: 50px;
+    border-radius: 5px;
+    background-color: #29be56;
+    color:#FFF;
+    text-decoration: none;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button:hover {
+    transform: scale(1.05);
+}
+
+.cta .button-blue {
+    background-color: #3498DB;
+}
+
+
+.phone-area .phone1 {
+    height:470px;
+    width: auto;
+    position: relative;
+    z-index:2;
+    top:10px;
+}
+
+.phone-area .phone2 {
+    height:470px;
+    width: auto;
+    position: relative;
+    margin-left: -100px;
+    z-index: 1;
+}
+
+/* Responsive */
+
+@media (max-width: 850px) {    /*  Tablet */
+    
+    header {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    
+    .container {
+        flex-direction: column;
+    }
+
+    .content-area {
+        text-align: center;
+    }
+
+    .content-area h1 {
+        margin-top: 0;
+    }
+
+    .content-area p {
+        margin: 0 40px;
+    }
+
+    .content-area .cta {
+        justify-content: center;
+        margin-top: 20px;
+    }
+
+    .phone-area {
+        margin-top: 50px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .phone-area .phone1{
+        top:0;
+        margin: 0 5px;
+        height: 550px;
+    
+    }
+
+    .phone-area .phone2 {
+        margin-left: 0 5px;
+        height: 550px;
+    }
+}
+
+@media (max-width: 650px) { /* Mobile */
+
+    header .menu-icon {
+        display: block;
+    }
+    
+    nav {
+        display: none;
+    }
+
+    header .logo {
+        width: 100%;
+        text-align: center;
+    }
+
+    header .logo img {
+        width: 200px;
+    }
+    
+    header .ham {
+        margin-left: 10px;
+    }
+
+    .content-area h1 {
+        font-size: 32px;
+    }
+
+    .content-area .cta {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .phone-area {
+        margin-bottom: 50px;
+    }
+
+    .phone-area .phone1 {
+        top:10px;
+        height: 450px;
+    }
+
+    .phone-area .phone2 {
+        margin-left: -150px;
+        height: 450px;
+    }
+
+
+}
+
+/* End Responsive */
